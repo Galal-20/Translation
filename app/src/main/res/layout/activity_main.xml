@@ -19,9 +19,11 @@
             android:layout_height="150dp"
             android:id="@+id/image"
             android:src="@drawable/translation"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/layout_translate"/>
+            app:layout_constraintBottom_toTopOf="@id/layout_translate"
+            android:layout_marginTop="80dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,7 +45,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/language_from"
-                    android:inputType="none"/>
+                    android:inputType="none" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <ImageView
@@ -77,7 +79,7 @@
             app:layout_constraintTop_toBottomOf="@id/layout_translate"
             android:hint="@string/text_here"
             android:layout_marginTop="20dp"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:padding="5dp"
             android:inputType="text"
             android:textColor="@color/black"
@@ -97,13 +99,12 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:id="@+id/text_to"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/translate_button"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:padding="5dp"
             android:textColor="@color/black">
         </TextView>
